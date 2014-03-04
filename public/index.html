@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/one-mozilla.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,6 +24,9 @@
 		<script>
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
+		<style>
+		img { border-width: 0 !important; background: rgba(0, 0, 0, 0) !important; box-shadow: none !important; }
+		</style>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -37,11 +40,14 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+					<h1>Node.js and Socket.io</h1>
+					<p>with Brandon Mills</p>
+					<p>and Anand Capur</p>
+				</section>
+
+				<section>
+					<h2>What is Node.js?</h2>
+					<img src="http://nodejs.org/images/logo.svg" />
 				</section>
 
 				<section>
@@ -388,6 +394,8 @@ function linkify( selector ) {
 		<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 		<script src="/js/touchswipe.min.js"></script>
 		<script src="/js/remote.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/js/sockets.js"></script>
 
 	</body>
 </html>
